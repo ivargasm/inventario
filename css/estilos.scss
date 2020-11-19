@@ -112,6 +112,11 @@ ul {
     margin: 5px;
   }
   form{
+    a{
+      margin: 10px auto;
+      display: inline-block;
+      cursor: pointer;
+    }
     .form{
       h1{
         width: 100%;
@@ -122,6 +127,36 @@ ul {
       .grupo{
         width: 40%;
       }
+    }
+  }
+}
+
+// --------------------------- update -----------------------
+.fondo_update{
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .logout{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+  }
+  .encabezados{
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #faf8f8;
+    .detalle{
+      width: 20%;
+      background: #ffffff;
     }
   }
 }

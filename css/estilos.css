@@ -137,6 +137,12 @@ ul {
   margin: 5px;
 }
 
+.fondo_agrega form a {
+  margin: 10px auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .fondo_agrega form .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,5 +160,41 @@ ul {
 
 .fondo_agrega form .form .grupo {
   width: 40%;
+}
+
+.fondo_update {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.fondo_update .logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.fondo_update .encabezados {
+  position: relative;
+  top: 100px;
+  width: 70%;
+  height: 600px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  background: #faf8f8;
+}
+
+.fondo_update .encabezados .detalle {
+  width: 20%;
+  background: #ffffff;
 }
 /*# sourceMappingURL=estilos.css.map */
