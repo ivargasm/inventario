@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto_ligth";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto_thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+}
+
+*, *:after, *:before {
+  border: 0;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+body, html {
+  /* font: 15px/160% "flamenco", Helvetica, Arial, sans-serif; */
+  background: 000;
+  color: #555;
+  height: 100% !important;
+  margin: 0 auto;
+  max-width: 100% !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: "roboto_ligth";
+  /* text-align: center; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.fondo {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+}
+
+.fondo_acciones {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fondo_acciones .cerrar {
+  position: absolute;
+  width: 100;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.fondo_acciones .acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.fondo_agrega {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fondo_agrega .logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+}
+
+.fondo_agrega form .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fondo_agrega form .form h1 {
+  width: 100%;
+}
+
+.fondo_agrega form .form .grupo {
+  width: 40%;
+}
+/*# sourceMappingURL=estilos.css.map */
