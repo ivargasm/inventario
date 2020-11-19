@@ -14,22 +14,22 @@
         <div class="logout">
             <a href="cerrar.php" class="btn red darken-4 white-text">cerrar sesion</a>
         </div>
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" name="login">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" name="insert">
             <div class="form">
                 <h1>Alta de registros</h1>
                 <div class="grupo">
-                    <select name="users" id="">
+                    <select name="user_id" id="">
                         <?php foreach($users as $user):?>
                             <option>Selecciona una opción</option>
-                            <option value="<?php echo $user['user_id'] ?>"><?php echo $user['name'] ?></option>
+                            <option name="user_id" value="<?php echo $user['user_id'] ?>"><?php echo $user['name'] ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>
                 <div class="grupo">
-                    <select name="users" id="">
+                    <select name="stock_id" id="">
                         <?php foreach($stocks as $stock):?>
                             <option>Selecciona una opción</option>
-                            <option value="<?php echo $stock['stock_id'] ?>"><?php echo $stock['ns'] ?></option>
+                            <option name="stock_id" value="<?php echo $stock['stock_id'] ?>"><?php echo $stock['ns'] ?></option>
                         <?php endforeach; ?>
                     </select>
                 </div>

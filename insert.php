@@ -18,6 +18,19 @@
     
         $stocks = $query->fetchall();
 
+        
+        if ($_SERVER['REQUEST_METHOD']=='POST'){
+            $user_id = $_POST['user_id'];
+            $stock_id = $_POST['stock_id'];
+
+            $query = $conexion->prepare('insert into assignment values (null, :user_id, :stock_id);');
+                $query->execute(array(
+                    ':user_id' => $user_id,
+                    ':stock_id' => $stock_id
+                ));
+        }
+        
+
         require 'vistas/insert.view.php';
     }else{
         header('location: index.php');
