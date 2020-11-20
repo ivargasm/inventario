@@ -138,6 +138,8 @@ ul {
   width: 100%;
   height: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
   .logout{
     position: absolute;
     top: 0;
@@ -146,17 +148,32 @@ ul {
   }
   .encabezados{
     position: relative;
-    top: 100px;
-    width: 70%;
-    height: 600px;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
     background: #faf8f8;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ffffff;
+    padding: 20px 20px ;
     .detalle{
       width: 20%;
-      background: #ffffff;
+      p{
+        font-size: 1.5em;
+      }
+      .info{
+        p{
+          font-size: 1rem;
+          margin-top: 20px;
+        }
+      }
+    }
+    .detalle:nth-child(5){
+      p, i{
+        width: 30%;
+        display: inline-block;
+      }
     }
   }
 }

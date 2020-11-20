@@ -29,7 +29,7 @@
         // }
         
 
-        require 'vistas/update.view.php';
+        require 'vistas/stock.view.php';
     }else{
         header('location: index.php');
     }

@@ -37,6 +37,16 @@
                     <?php endforeach; ?>
                 </div>
             </div>
+            <div class="detalle">
+                <p>Acciones</p>
+                <div class="info">
+                    <?php foreach ($users as $user): ?>
+                        <p><?php echo $user['user_id']; ?></p>
+                        <a href=""><i class="fas fa-edit"></i></a>
+                        <a href=""><i class="fas fa-file-import"></i></a>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
     </div>
 

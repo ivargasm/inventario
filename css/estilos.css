@@ -168,6 +168,12 @@ ul {
   width: 100%;
   height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fondo_update .logout {
@@ -179,9 +185,7 @@ ul {
 
 .fondo_update .encabezados {
   position: relative;
-  top: 100px;
-  width: 70%;
-  height: 600px;
+  width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,10 +195,27 @@ ul {
           justify-content: space-between;
   text-align: center;
   background: #faf8f8;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px #ffffff;
+          box-shadow: 0 0 10px #ffffff;
+  padding: 20px 20px;
 }
 
 .fondo_update .encabezados .detalle {
   width: 20%;
-  background: #ffffff;
+}
+
+.fondo_update .encabezados .detalle p {
+  font-size: 1.5em;
+}
+
+.fondo_update .encabezados .detalle .info p {
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.fondo_update .encabezados .detalle:nth-child(5) p, .fondo_update .encabezados .detalle:nth-child(5) i {
+  width: 30%;
+  display: inline-block;
 }
 /*# sourceMappingURL=estilos.css.map */
