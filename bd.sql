@@ -62,8 +62,8 @@ insert into job values
 (null,"RH");
 
 insert into users values
-(null, "ivargasm","ismael","vargas","12345",1,1),
-(null, "tbadilla", "Toño","Badillo","12345", 2, 2),
+(null, "ivargasm","12345","ismael","vargas",1,1),
+(null, "tbadilla","12345","Toño","Badillo", 2, 2),
 
 insert into type_material values
 (null,"PC Escritorio"),
