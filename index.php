@@ -9,7 +9,7 @@ $errores = '';
 if ($_SERVER['REQUEST_METHOD']=='POST'){
     $usuario = filter_var(strtolower($_POST['usuario']), FILTER_SANITIZE_STRING);
     $psw = $_POST['psw'];
-    $psw = hash('sha512', $psw);
+    // $psw = hash('sha512', $psw);
 
 
     try{
