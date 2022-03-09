@@ -2,29 +2,20 @@ create database if not exists inventarios;
 
 use inventarios;
 
-create table role(
-    role_id int AUTO_INCREMENT not null,
-    rol_dsc varchar(200) not null,
-    constraint pk_role primary key(role_id)
+create table roles(
+    id int AUTO_INCREMENT not null,
+    tipo varchar(200) not null,
+    constraint pk_role primary key(id)
 );
 
-create table job(
-    job_id int AUTO_INCREMENT not null,
-    job_dsc varchar(200) not null,
-    constraint pk_job primary key(job_id)
-);
 
-create table users(
-    user_id int AUTO_INCREMENT not null,
+create table usuarios(
+    id int AUTO_INCREMENT not null,
     user varchar(100) not null,
     psw varchar(250) not null,
-    name varchar(250) not null,
-    last_name varchar(250),
-    job_id int not null,
-    role_id int not null,
-    constraint pk_user primary key(user_id),
-    constraint fk_role foreign key(role_id) references role(role_id),
-    constraint fk_job foreign key(job_id) references job(job_id)
+    id_role int not null,
+    constraint pk_user primary key(id),
+    constraint fk_role foreign key(id_role) references roles(id)
 );
 
 
@@ -57,13 +48,9 @@ insert into role values
 (null,"Administrador"),
 (null,"Usuario");
 
-insert into job values
-(null,"Sistemas"),
-(null,"RH");
-
 insert into users values
-(null, "ivargasm","827ccb0eea8a706c4c34a16891f84e7b","ismael","vargas",1,1),
-(null, "tbadilla","827ccb0eea8a706c4c34a16891f84e7b","Toño","Badillo", 2, 2);
+(null, "ivargasm","12345",1),
+(null, "tbadillo","827ccb0eea8a706c4c34a16891f84e7b",1);
 
 insert into type_material values
 (null,"PC Escritorio"),
